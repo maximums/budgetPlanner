@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industry">
+        <item>Agriculture</item>
+        <item>Attorneys and Law Firms</item>
+        <item>Food and Beverage</item>
+        <item>Health and Medical</item>
+        <item>IT</item>
+        <item>Restaurant and Hotel</item>
+        <item>Sport and Games</item>
+        <item>Transport</item>
+    </string-array>
+</resources>

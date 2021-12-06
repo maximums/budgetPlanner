@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="customButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="ButtonStyle" parent="customButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/large_150</item>
+        <item name="android:layout_marginEnd">@dimen/large_150</item>
+        <item name="android:layout_marginBottom">@dimen/large_210</item>
+    </style>
+
+    <style name="customChipsStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="customTextField" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextColor">@color/white</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="android:textColorHint">@color/grey_light</item>
+        <item name="editTextStyle">@style/customTextField</item>
+    </style>
+
+    <style name="customEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ButtonAppBarStyle" parent="Theme.BudgetPlanner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_20</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_marginTop">@dimen/normal_150</item>
+        <item name="layout_constraintHorizontal_bias">0.95</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+    <style name="EditTextTransactionStyle" parent="Theme.BudgetPlanner">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">@dimen/normal_150</item>
+        <item name="android:layout_marginEnd">@dimen/normal_150</item>
+        <item name="android:paddingTop">@dimen/small_100</item>
+        <item name="android:paddingBottom">@dimen/small_100</item>
+        <item name="android:paddingStart">@dimen/normal_100</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/white </item>
+        <item name="android:background">@drawable/edt_transaction_background</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="ButtonAuthStyle" parent="Theme.BudgetPlanner">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/large_150</item>
+        <item name="android:layout_marginEnd">@dimen/large_150</item>
+        <item name="android:layout_marginBottom">@dimen/large_210</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Theme.BudgetPlanner">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:layout_marginStart">@dimen/large_150</item>
+        <item name="android:layout_marginEnd">@dimen/large_150</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TitleStyle" parent="Theme.BudgetPlanner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">@dimen/normal_150</item>
+        <item name="android:layout_marginTop">@dimen/small_800</item>
+        <item name="android:textSize">@dimen/font_36</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/alertdialog_background</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralBStyle</item>
+        <item name="alertDialogStyle">@style/DialogShape</item>
+    </style>
+
+    <style name="DialogShape" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/CustomShape</item>
+    </style>
+
+    <style name="CustomShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/small_250</item>
+    </style>
+
+    <style name="NeutralBStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="tabSelectedTextColor">@color/purple</item>
+        <item name="tabTextColor">@color/grey_light</item>
+        <item name="tabIndicatorColor">@color/purple</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextAppearance">@style/CustomTabTextAppearance</item>
+    </style>
+
+    <style name="CustomTabTextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="CustomDatePickerStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:windowBackground">@color/alertdialog_background</item>
+        <item name="android:colorControlActivated">@color/purple</item>
+        <item name="colorControlHighlight">@color/blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="navigation_animation_duration">400</integer>
+    <integer name="max_lines">1</integer>
+    <integer name="default_ems">5</integer>
+    <integer name="default_ems_transaction">10</integer>
+    <integer name="max_balance_length">9</integer>
+    <integer name="max_note_length">250</integer>
+</resources>

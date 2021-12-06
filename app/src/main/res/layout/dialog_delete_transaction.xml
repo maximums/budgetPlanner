@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_delete_transaction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_100"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_delete_transaction_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_divider_height"
+        android:layout_marginTop="@dimen/normal_150"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/dialog_delete_transaction_positive_btn"
+        style="@style/NeutralBStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_divider_height"
+        android:layout_marginTop="@dimen/small_50"
+        android:background="@color/grey" />
+
+    <Button
+        android:id="@+id/dialog_delete_transaction_negative_btn"
+        style="@style/NeutralBStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

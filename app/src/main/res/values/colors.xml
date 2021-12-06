@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#FF000000</color>
+    <color name="grey_light">#6D6789</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--    Splash Screen-->
+    <color name="gray">#9E9898</color>
+    <color name="bg_app_gradient_start">#24244F</color>
+    <color name="bg_app_gradient_end">#0D0D28</color>
+    <color name="main_back_light">#24244F</color>
+    <color name="main_back_dark">#0D0D28</color>
+    <color name="blue">#0A84FF</color>
+    <color name="grey">#A6545458</color>
+    <color name="purple">#CD4FF7</color>
+    <color name="gradient_blue_light">#7653F6</color>
+    <color name="menu_roles">#2E2853</color>
+    <color name="dark_purple">#4DCD4FF7</color>
+    <color name="dark_blue">#4D7653F6</color>
+    <color name="menu_roles2">#0D2E2853</color>
+    <color name="alertdialog_background">#BF1E1E1E</color>
+    <color name="btn_bg_transaction">#342D5B</color>
+    <color name="radio_btn_on">#7C3FFF</color>
+    <color name="radio_btn_off">#292E3C</color>
+    <color name="btn_bg_date">#342D5B</color>
+    <color name="transaction_item_background">#342D5B</color>
+    <color name="delete_transaction_item_background">#792CD9</color>
+</resources>

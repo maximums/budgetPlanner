@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".dashboard.ui.views.CardFragment">
+
+    <ImageView
+        android:id="@+id/dash_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/card_expense"
+        android:src="@drawable/ic_initial_card_inc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dash_card_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/normal_150"
+        android:layout_marginBottom="@dimen/large_100"
+        android:textSize="@dimen/font_32"
+        app:layout_constraintBottom_toBottomOf="@id/dash_card"
+        app:layout_constraintEnd_toEndOf="@id/dash_card" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

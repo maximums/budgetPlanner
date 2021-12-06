@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/large_100"
+    android:layout_marginEnd="@dimen/large_100"
+    android:orientation="vertical"
+    tools:context=".transactionlist.ui.views.TransactionListFragment">
+
+    <TextView
+        android:id="@+id/transaction_list_title"
+        style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/elevation_0"
+        android:textSize="@dimen/font_30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/transaction_list_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/large_100" />
+
+</LinearLayout>

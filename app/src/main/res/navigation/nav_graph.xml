@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/registerFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.endava.budgetplanner.authentication.ui.views.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.endava.budgetplanner.authentication.ui.views.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_registerDataFragment"
+            app:destination="@id/registerDataFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/scale_out" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerDataFragment"
+        android:name="com.endava.budgetplanner.authentication.ui.views.RegisterDataFragment"
+        tools:layout="@layout/fragment_register_data">
+        <action
+            android:id="@+id/action_registerDataFragment_to_registerDataIndustryFragment"
+            app:destination="@id/registerDataIndustryFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/scale_out" />
+        <argument
+            android:name="user"
+            app:argType="com.endava.budgetplanner.data.models.user.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerDataIndustryFragment"
+        android:name="com.endava.budgetplanner.authentication.ui.views.RegisterDataIndustryFragment"
+        tools:layout="@layout/fragment_register_data_industry">
+        <action
+            android:id="@+id/action_registerDataIndustryFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/registerFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="user"
+            app:argType="com.endava.budgetplanner.data.models.user.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.endava.budgetplanner.authentication.ui.views.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/scale_out"
+            app:popExitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.endava.budgetplanner.dashboard.ui.views.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/scale_out" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_transactionListFragment"
+            app:destination="@id/transactionListFragment"
+            app:enterAnim="@anim/scale_in"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.endava.budgetplanner.transaction.ui.views.TransactionFragment"
+        tools:layout="@layout/fragment_transaction">
+        <argument
+            android:name="categories"
+            app:argType="com.endava.budgetplanner.data.models.MappedCategory[]" />
+        <argument
+            android:name="balance"
+            app:argType="com.endava.budgetplanner.data.models.AmountBalance" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.endava.budgetplanner.transactionlist.ui.views.TransactionListFragment">
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

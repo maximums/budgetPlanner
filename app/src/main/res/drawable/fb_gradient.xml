@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple android:color="@color/purple">
+            <item>
+                <shape android:shape="oval">
+                    <gradient android:angle="90" android:endColor="@color/gradient_blue_light" android:startColor="@color/purple" android:type="linear" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="oval">
+            <gradient android:angle="90" android:endColor="@color/dark_blue" android:startColor="@color/dark_purple" android:type="linear" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Budget Planner</string>
+    <!-- Registration -->
+    <string name="name_validation_error">First / Last name should contain only alpha characters</string>
+    <string name="name_length_error">First / Last name must be greater than 3 or equal to 22</string>
+    <string name="password_validation_error">Please enter a valid password</string>
+    <string name="email_validation_error">Please enter a valid email address</string>
+    <string name="conflict_error">The request could not be processed because of conflict in the request.</string>
+    <string name="bad_request_error">The server cannot or will not process the request due to some problems.</string>
+    <string name="no_content_error">There is no content to send in the response body.</string>
+    <string name="validation_error">Entered credentials are invalid!</string>
+    <!--Welcome-->
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_message">Your account has been successfully registered and you can now proceed to sign in.</string>
+    <string name="welcome_button_text">PROCEED TO SIGN IN</string>
+    <!--SignIn-->
+    <string name="access_your_account">Access your \n account</string>
+    <string name="sign_up">sign up</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="cards">Cards</string>
+    <string name="invalid_password_email_error">Incorrect username or password</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="your_request_is_being_processed">Your request is being processed.</string>
+    <string name="authentication_failed">Authentication Failed!</string>
+    <string name="the_request_has_timed_out">The request has timed out.</string>
+    <string name="got_it">Got It!</string>
+    <string name="txt_title_sing_up">Let\'s get you \n started</string>
+    <string name="btn_register_next">NEXT</string>
+    <string name="btn_register_sign_up">SIGN UP</string>
+    <string name="btn_register_sign_up_main">CONTINUE</string>
+    <string name="edt_register_name">First Name</string>
+    <string name="edt_register_sur_name">Last Name</string>
+    <string name="txt_register_step_1">Step 1 of 2</string>
+    <string name="txt_register_step_2">Step 2 of 2</string>
+    <string name="txt_initial_balance">Initial Balance</string>
+    <string name="edt_register_email">Enter your email</string>
+    <string name="edt_register_pass">Enter your password</string>
+    <string name="edt_register_pass_confirm">Confirm password</string>
+    <string name="txt_sign_in">sign in</string>
+    <string name="txt_title_register">Create your \n account</string>
+    <string name="password_not_matching">Passwords are not matching.</string>
+    <string name="number_length_error">Initial balance must be smaller or equal to 10000</string>
+    <string name="number_validation_error">Invalid initial balance</string>
+    <string name="error">An error occurred</string>
+    <string name="lost_internet_connection">No internet connection</string>
+    <string name="undefined">Undefined</string>
+    <string name="lost_internet_connection_mes">Turn on your Internet and retry.</string>
+    <string name="retry">Retry</string>
+    <string name="expenses">Expenses</string>
+    <string name="income">Income</string>
+    <string name="food_and_drink">Food and drink</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="taxes">Taxes and payments</string>
+    <string name="shopping">Shopping</string>
+    <string name="others">Others</string>
+    <string name="salaries_and_bonuses">Salaries and bonuses</string>
+    <string name="investments">Investments</string>
+    <string name="payments">Payments and transfers</string>
+    <string name="transaction_template">%1$d transactions</string>
+    <string name="no_income_transaction">You haven\'t added any income for this month yet.</string>
+    <string name="no_expense_transaction">You haven\'t added any expense for this month yet.</string>
+    <string name="add_new_transaction">+ Add new transaction</string>
+    <string name="desc_welcome_cards">desc_welcome_cards</string>
+    <string name="desc_welcome_bg_cards">desc welcome bg cards</string>
+    <string name="register_hint_role">My role is..</string>
+    <string name="amount_formatter_less_than_1">Less than 1K</string>
+    <string name="amount_formatter_less_than_5">More than 5K</string>
+    <string name="amount_formatter_between">Less than 5K</string>
+    <string name="txt_balance">My balance</string>
+    <string name="dashboard_my_balance">My balance</string>
+    <string name="card_expense">card expense</string>
+    <string name="txt_initial_balance2">$0.<small><small>00</small></small></string>
+    <string name="plus_button">plus button</string>
+    <string name="no_transaction">No transactions</string>
+    <string name="initial_amount">$00.00</string>
+    <string name="income_format_template">+$%s</string>
+    <string name="expense_format_template">-$%s</string>
+    <!-- Transaction confirm Dialog -->
+    <string name="transaction_delete_dialog_message">Once you delete it, it\’s gone forever.</string>
+    <string name="success">Success</string>
+    <string name="new_expense_transaction_template">A new Expense of %s has been added.</string>
+    <string name="new_income_transaction_template">A new Income of %s has been added.</string>
+    <string name="done">Done</string>
+    <string name="add_another">Add another</string>
+    <string name="invalid_token_error">Your session expired please re-login.</string>
+    <string name="empty_list_of_categories_error">Unknown error occurred.Please refresh the screen and try again.</string>
+    <string name="category">Category</string>
+
+    <string name="txt_tilte_transaction">Add Transaction</string>
+    <string name="hint_trans_amount">Enter an Amount</string>
+    <string name="hint_trans_title">Enter a title</string>
+    <string name="menu_trans_title_save">Save</string>
+    <!--    Error messages  -->
+    <!--    Transaction Name   -->
+    <string name="error_less_than_min_char">The title can not be less than %1$s characters long.</string>
+    <string name="error_more_than_max_char">The title can not be more than %1$s characters long.</string>
+    <string name="error_special_char">The title can\'t contain special characters.</string>
+    <!--    Transaction Amount  -->
+    <string name="error_amount_less_than_min">The amount can not be less than  %1$s</string>
+    <string name="error_amount_more_than_max">The amount can not be greater than the currently available amount of %1$s</string>
+    <!--    Transaction Date    -->
+    <string name="error_trans_date_less_than_min">The date can not be later than today</string>
+    <string name="error_trans_ate_more_than_max">The date can not be more than a year ago.</string>
+    <string name="txt_transaction_type">Transaction type</string>
+    <string name="txt_chose_date">Chose date</string>
+    <string name="txt_trans_notes">Notes</string>
+
+    <string name="sign_out">Sign out</string>
+    <string name="unknown_error_try_again">Unknown error occurred.Please try again!</string>
+    <string name="no_category_selected">Please select category!</string>
+    <string name="transaction_delete_dialog_title">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

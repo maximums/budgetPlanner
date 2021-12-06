@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".authentication.ui.views.WelcomeFragment">
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_150"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/welcome_title"
+        android:textSize="@dimen/font_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_150"
+        android:layout_marginEnd="@dimen/large_150"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/welcome_message"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_b_sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_title" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/welcome_b_sign_in"
+        android:text="@string/welcome_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bg_circle"
+        android:layout_width="@dimen/welcome_bg_circle_width"
+        android:layout_height="@dimen/welcome_bg_circle_height"
+        android:contentDescription="@string/desc_welcome_bg_cards"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_welcome_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_cards"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_cards"
+        android:layout_width="@dimen/welcome_cards_width"
+        android:layout_height="@dimen/welcome_cards_height"
+        android:contentDescription="@string/desc_welcome_cards"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

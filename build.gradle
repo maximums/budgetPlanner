@@ -1,0 +1,25 @@
+buildscript {
+    ext{
+        nav_version = "2.3.5"
+        retofit_version = "2.9.0"
+        dagger_version = "2.39.1"
+        kotlin_version = "1.5.31"
+        coroutines_version   = "1.5.0"
+        lifecycle_version  = "2.4.0-rc01"
+        ktx_fragnet = "1.4.0-alpha10"
+        data_store_version   = "1.0.0"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
