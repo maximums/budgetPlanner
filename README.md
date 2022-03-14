@@ -5,7 +5,7 @@ Budget Planner is an Android app intended to help users better manage their budg
 ## Installation
 
 Clone this repository and import it into __Android Studio__
-`git clone https://MDDInternship@dev.azure.com/MDDInternship/BudgetPlannerJava/_git/Front-End`
+`git clone https://github.com/maximums/budgetPlanner.git`
 
 ## Android Version Targeting
 
